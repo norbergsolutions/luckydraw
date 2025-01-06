@@ -43,10 +43,10 @@ os.makedirs(download_dir, exist_ok=True)
 # Connect to the database
 def connect_to_db():
     return mysql.connector.connect(
-        host="localhost",
-        user="root",  # Replace with your MySQL username
-        password="Prima7815",  # Replace with your MySQL password
-        database="lucky_draw_db"
+        host="DB_HOST",
+        user="DB_USER",  # Replace with your MySQL username
+        password="DB_PASSWORD",  # Replace with your MySQL password
+        database="DB_NAME"
     )
 
 # Clear all data in tables
